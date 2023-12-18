@@ -51,11 +51,12 @@ function game() {
         console.log(computerSelection);
         console.log(playRound(playerSelection,computerSelection));
         console.log(`Player ${scorePlayer} VS Computer ${scoreComputer}`);
-        if((playRound(playerSelection,computerSelection) === "You win! Rock beats scissors."||"You win! Paper beats rock."||"You win! Scissors beats paper.")){
+        if((playRound(playerSelection,computerSelection) === ("You win! Rock beats scissors."))||(playRound(playerSelection,computerSelection) === ("You win! Paper beats rock."))||(playRound(playerSelection,computerSelection) === ("You win! Scissors beats paper."))){
             scorePlayer++;
-        }
-        else if((playRound(playerSelection,computerSelection) === "You lose! Rock beats scissors."||"You lose! Paper beats rock."||"You lose! Scissors beats paper.")){
+        } 
+        else if((playRound(playerSelection,computerSelection) === ("You lose! Rock beats scissors."))||(playRound(playerSelection,computerSelection) === ("You lose! Paper beats rock."))||(playRound(playerSelection,computerSelection) === ("You lose! Scissors beats paper."))){
             scoreComputer++;
+
         }
     }
     console.log("Game Over")
